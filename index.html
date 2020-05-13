@@ -28,8 +28,8 @@
               <p style="text-align:center">
                 <name>Pranav A</name>
               </p>
-              <p>I am currently the lead machine learning engineer in Dayta. 
-                I completed my Masters in Big Data Technology at HKUST and Bachelors in Computer Science and Engineering at VIT University.
+              <p>I am currently the lead machine learning engineer in Dayta AI Limited, Science Park, Hong Kong. 
+                I completed my Bachelors in Computer Science and Engineering at VIT University.
 		My email is cs.pranav.a (at) gmail.com.
               </p>
               <p style="text-align:center">
@@ -47,8 +47,14 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research interests are mainly in Natural Language Processing, specifically, representation learning and morphology. 
-                Currently, my work is focused on understanding subword models in multilingual tasks.
+                My research interests are mainly in Natural Language Processing, particularly, representation learning and morphology. 
+                Currently, my work is focused on understanding subword models in multilingual tasks, specifically addressing these issues:
+				<ul>
+				  <li>How to construct subword tokenization approaches which address the issue of sparsity and skewness for tokenization in monolingual NLU approaches?</li>
+				  <li>How to construct subword tokenization approaches for multilingual and multitask learning methods by leveraging mapping probabilities?</li>
+				  <li>How to construct subword mappings for cross-lingual transfer learning methods especially for morphologically rich languages?</li>
+				</ul>
+				Here are some of my publications addressing similar issues:
               </p>
             </td>
           </tr>
@@ -65,7 +71,7 @@
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="data/2kenize.pdf">
+              <a href="https://arxiv.org/abs/2005.03375">
                 <papertitle>2kenize: Tying Subword Sequences for Chinese Script Conversion</papertitle>
               </a>
               <br>
@@ -75,17 +81,11 @@
               <em>ACL</em>, 2020  
               <br>
               <a href="https://github.com/pranav-ust/2kenize">Github</a>&nbsp/&nbsp
-	      <a href="https://sigtyp.github.io/sigtyp-newsletter-Apr-2020.html">SIGTYP Newsletter</a>
+	      <a href="https://sigtyp.github.io/sigtyp-newsletter-Apr-2020.html">SIGTYP Newsletter</a>&nbsp/&nbsp
+	      <a href="https://arxiv.org/abs/2005.03375">arXiv</a>&nbsp/&nbsp
+	      <a href="https://docs.google.com/presentation/d/15rMlJ4If-COPfx0G9HfQ4UL8JtO6AE_03Oa7mcZBVlE/edit?usp=sharing">HKML Slides</a>
               <p></p>
-              <p>Simplified Chinese to Traditional Chinese character conversion is a common preprocessing step in Chinese NLP. 
-                Despite this, current approaches have poor performance because they do not take into account that a simplified Chinese character can 
-                correspond to multiple traditional characters.
-                Here, we propose a novel model that can disambiguate between mappings and convert between the two scripts. 
-                The model is based on subword segmentation, two language models, as well as a method for mapping between subword sequences.
-                We further construct benchmark datasets for topic classification and script conversion.
-                Our proposed method outperforms previous Chinese Character Conversion approaches by 6 points in accuracy. 
-                These results are further confirmed in a downstream application, where 2kenize is used to preprocess text for topic classification. 
-                An error analysis reveals that our method's particular strengths are in dealing with code mixing and named entities. 
+              <p>Simplified Chinese to Traditional Chinese character conversion is a common preprocessing step in Chinese NLP. Despite this, current approaches have poor performance because they do not take into account that a simplified Chinese character can correspond to multiple traditional characters. Here, we propose a model that can disambiguate between mappings and convert between the two scripts. The model is based on subword segmentation, two language models, as well as a method for mapping between subword sequences. We further construct benchmark datasets for topic classification and script conversion. Our proposed method outperforms previous Chinese Character conversion approaches by 6 points in accuracy. These results are further confirmed in a downstream application, where 2kenize is used to convert pretraining dataset for topic classification. An error analysis reveals that our method's particular strengths are in dealing with code-mixing and named entities.
               </p>
             </td>
           </tr>  
