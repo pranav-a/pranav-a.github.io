@@ -1,8 +1,13 @@
+/* ============================
+   1. Font Faces
+   ============================ */
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
+  font-display: swap;
   src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -11,6 +16,7 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
+  font-display: swap;
   src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -19,6 +25,7 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
+  font-display: swap;
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -27,6 +34,7 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
+  font-display: swap;
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -35,6 +43,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -43,6 +52,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -51,6 +61,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -59,73 +70,358 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* ============================
+   2. CSS Custom Properties
+   ============================ */
+
+:root {
+  --color-link: #1772d0;
+  --color-link-hover: #f09228;
+  --color-text: #333;
+  --color-text-secondary: #555;
+  --color-bg: #fff;
+  --color-border: #e0e0e0;
+  --color-border-light: #f0f0f0;
+  --color-highlight: #ffffd0;
+  --font-primary: 'Lato', Verdana, Helvetica, sans-serif;
+  --max-width: 800px;
+  --spacing-xs: 4px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+}
+
+/* ============================
+   3. Base / Reset
+   ============================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
+   4. Links
+   ============================ */
+
 a {
-  color: #1772d0;
+  color: var(--color-link);
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+  color: var(--color-link-hover);
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+/* ============================
+   5. Layout
+   ============================ */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-md);
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+/* ============================
+   6. Bio / Header
+   ============================ */
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
+}
+
+.bio-text {
+  flex: 1;
+}
+
+.bio-text h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.01em;
+}
+
+.bio-text p {
+  margin: 0 0 0.6em;
+}
+
+.bio-links {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: var(--spacing-sm);
+}
+
+.bio-links a + a::before {
+  content: "/";
+  color: #999;
+  margin-right: 6px;
+}
+
+.bio-photo {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.bio-photo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ============================
+   7. Section Headings
+   ============================ */
+
+h2 {
+  font-size: 1.4em;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.01em;
+}
+
+/* ============================
+   8. Publications
+   ============================ */
+
+.paper {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.paper:last-child {
+  border-bottom: none;
+}
+
+.paper-thumbnail {
+  width: 160px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+.paper-thumbnail img {
+  max-width: 160px;
+  height: auto;
+}
+
+.paper-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.paper-title {
   font-size: 14px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.4;
 }
 
-heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+.paper-authors {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
 }
 
-papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700
+.paper-venue {
+  font-size: 13px;
+  margin-bottom: var(--spacing-xs);
 }
 
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+.paper-links {
+  margin-bottom: 8px;
+  font-size: 13px;
 }
 
-.one {
+.paper-links a + a::before {
+  content: " / ";
+  color: #999;
+}
+
+.paper-abstract {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin: 8px 0 0;
+}
+
+/* Placeholder for papers without thumbnails */
+.paper-thumbnail-placeholder {
   width: 160px;
   height: 160px;
-  position: relative;
+  background-color: var(--color-border-light);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #888;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+/* Award badge */
+.award-badge {
+  display: inline-block;
+  background-color: #fff3cd;
+  color: #856404;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-bottom: var(--spacing-xs);
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+/* ============================
+   9. Research Interests
+   ============================ */
+
+.research-interests p {
+  line-height: 1.7;
 }
+
+/* ============================
+   10. Teaching
+   ============================ */
+
+.teaching p {
+  line-height: 1.7;
+}
+
+.teaching em {
+  color: var(--color-link);
+  font-style: italic;
+}
+
+/* ============================
+   11. Service & Miscellaneous
+   ============================ */
+
+.service p,
+.miscellaneous p {
+  line-height: 1.7;
+}
+
+/* ============================
+   12. Utility
+   ============================ */
 
 span.highlight {
-  background-color: #ffffd0;
+  background-color: var(--color-highlight);
+}
+
+/* ============================
+   13. Responsive
+   ============================ */
+
+@media (max-width: 768px) {
+  .bio {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+
+  .bio-photo {
+    width: 160px;
+    order: -1;
+  }
+
+  .bio-text p {
+    text-align: left;
+  }
+
+  .paper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .paper-thumbnail {
+    width: 120px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .paper-thumbnail img {
+    max-width: 120px;
+  }
+
+  .paper-details {
+    width: 100%;
+  }
+
+  .paper-thumbnail-placeholder {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+  }
+
+  .bio-text h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .bio-photo {
+    width: 120px;
+  }
+
+  .paper-thumbnail {
+    display: none;
+  }
+}
+
+/* ============================
+   14. Print
+   ============================ */
+
+@media print {
+  body {
+    font-size: 12px;
+  }
+
+  a {
+    color: #000;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 10px;
+  }
+
+  .paper-thumbnail,
+  .bio-photo {
+    display: none;
+  }
 }
