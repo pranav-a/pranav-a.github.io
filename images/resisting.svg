@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400">
+  <defs>
+    <style>
+      .page { fill: #ffffff; stroke: #0d3b3b; stroke-width: 3; }
+      .band { fill: #0d3b3b; }
+      .line { stroke: #b9cfce; stroke-width: 4; stroke-linecap: round; }
+      .label { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; font-weight: bold; fill: #0d3b3b; text-anchor: middle; }
+      .num { font-family: Georgia, serif; font-size: 16px; fill: #ffffff; text-anchor: middle; font-weight: bold; }
+    </style>
+  </defs>
+  <rect width="720" height="400" fill="#eef4f3"/>
+
+  <!-- Page 1: Scoping Study -->
+  <g transform="translate(35,74) rotate(-3)">
+    <rect class="page" x="0" y="0" width="170" height="252" rx="8"/>
+    <rect class="band" x="0" y="0" width="170" height="46" rx="8"/>
+    <rect class="band" x="0" y="30" width="170" height="16"/>
+    <text class="num" x="85" y="31">01</text>
+    <text class="label" x="85" y="110">Scoping</text>
+    <text class="label" x="85" y="136">Study</text>
+    <line class="line" x1="24" y1="176" x2="146" y2="176"/>
+    <line class="line" x1="24" y1="198" x2="146" y2="198"/>
+    <line class="line" x1="24" y1="220" x2="112" y2="220"/>
+  </g>
+
+  <!-- Page 2: Technical Study -->
+  <g transform="translate(275,62)">
+    <rect class="page" x="0" y="0" width="170" height="252" rx="8"/>
+    <rect class="band" x="0" y="0" width="170" height="46" rx="8"/>
+    <rect class="band" x="0" y="30" width="170" height="16"/>
+    <text class="num" x="85" y="31">02</text>
+    <text class="label" x="85" y="110">Technical</text>
+    <text class="label" x="85" y="136">Study</text>
+    <line class="line" x1="24" y1="176" x2="146" y2="176"/>
+    <line class="line" x1="24" y1="198" x2="146" y2="198"/>
+    <line class="line" x1="24" y1="220" x2="112" y2="220"/>
+  </g>
+
+  <!-- Page 3: Participatory Study -->
+  <g transform="translate(515,74) rotate(3)">
+    <rect class="page" x="0" y="0" width="170" height="252" rx="8"/>
+    <rect class="band" x="0" y="0" width="170" height="46" rx="8"/>
+    <rect class="band" x="0" y="30" width="170" height="16"/>
+    <text class="num" x="85" y="31">03</text>
+    <text class="label" x="85" y="110">Participatory</text>
+    <text class="label" x="85" y="136">Study</text>
+    <line class="line" x1="24" y1="176" x2="146" y2="176"/>
+    <line class="line" x1="24" y1="198" x2="146" y2="198"/>
+    <line class="line" x1="24" y1="220" x2="112" y2="220"/>
+  </g>
+</svg>

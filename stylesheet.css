@@ -253,6 +253,13 @@ h2 {
   margin-bottom: var(--spacing-xs);
 }
 
+.paper-note {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
 .paper-links {
   margin-bottom: 8px;
   font-size: 13px;
