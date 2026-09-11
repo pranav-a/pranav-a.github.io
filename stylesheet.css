@@ -184,6 +184,7 @@ a:hover {
 
 .bio-photo img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -296,6 +297,7 @@ h2 {
 /* Award badge */
 .award-badge {
   display: inline-block;
+  margin-top: 2px;
   background-color: #fff3cd;
   color: #856404;
   font-size: 12px;
@@ -313,6 +315,20 @@ h2 {
   line-height: 1.7;
 }
 
+.research-interests ul {
+  margin: 0.6em 0 0;
+  padding-left: 1.25em;
+  line-height: 1.7;
+}
+
+.research-interests li {
+  margin-bottom: 0.4em;
+}
+
+.research-interests li:last-child {
+  margin-bottom: 0;
+}
+
 /* ============================
    10. Teaching
    ============================ */
@@ -322,8 +338,27 @@ h2 {
 }
 
 .teaching em {
-  color: var(--color-link);
+  color: var(--color-text);
   font-style: italic;
+}
+
+.course-list {
+  list-style: none;
+  margin: 0.6em 0 0;
+  padding: 0;
+}
+
+.course-list li {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding: 3px 0;
+  line-height: 1.6;
+}
+
+.course-term {
+  flex: 0 0 86px;
+  color: var(--color-text-secondary);
+  font-size: 13px;
 }
 
 /* ============================
